@@ -1,3 +1,6 @@
+const buttons = document.getElementsByClassName('button');
+const audiotag = document.getElementsByTagName('audio');
+
 var playing = "off";
 function playSound(id) {
     var x = document.getElementById(id);
@@ -12,7 +15,8 @@ function playSound(id) {
     }
 }
 
-const buttons = document.getElementsByClassName('button');
-// for (let i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener("click", playSound(buttons[i].getElementsByTagName("audio")[0].id));
-// }
+function SetVolume(val){
+    var show = document.getElementById('show');
+    if (oninput >= 0)
+    show.volume = val / 100;
+}

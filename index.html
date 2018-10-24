@@ -36,7 +36,7 @@
 				<li class="button" onclick="playSound('scratch')"><audio id="scratch" preload><source src="Sounds/Scratch.mp3"></audio>Scratch</li>
 				<li class="button" onclick="playSound('?')"><audio id="?" preload><source src=""></audio>?</li>
 				<li class="button" onclick="playSound('?')"><audio id="?" preload><source src=""></audio>?</li>
-				<li class="button" onclick="playSound('whip')"><audio id="whip" preload><source src="Sounds/Whip.mp3"></audio>Whip</li>
+				<li class="button" onclick="playSound('whip')"><audio id="noise" id="whip" preload><source src="Sounds/Whip.mp3"></audio>Whip</li>
 			</ul>
 			<ul class="button-row">
 				<li class="button" onclick="playSound('flush')"><audio id="flush" preload><source src="Sounds/Toilet.mp3"></audio>Toilet Flush</li>
@@ -50,7 +50,7 @@
 	<div class="volume">
 		<h1>Volume</h1>
 		<div class="slide">
-		<input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+		<input type="range" min="0" max="100" step="1" class="slider" id="myRange" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
 		<div class="slider-label">
 		<h4 class="low">0</h4>
 		<h4 class="high">100</h4>
