@@ -1,5 +1,9 @@
 const buttons = document.getElementsByClassName('button');
 const audiotag = document.getElementsByTagName('audio');
+let idArray = [];
+for(let i = 0; i < buttons.length; i++){
+  idArray.append(buttons[i].id);
+}
 
 var playing = "off";
 function playSound(id) {
@@ -16,7 +20,6 @@ function playSound(id) {
 }
 
 function SetVolume(val){
-    var show = document.getElementById('show');
-    if (oninput >= 0)
-    show.volume = val / 100;
+    var show = document.getElementById(idArray);
+        show.volume = val / 100;  
 }
