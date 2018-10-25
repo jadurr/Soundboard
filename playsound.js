@@ -1,25 +1,25 @@
 const buttons = document.getElementsByClassName('button');
 const audiotag = document.getElementsByTagName('audio');
-let idArray = [];
-for(let i = 0; i < buttons.length; i++){
-  idArray.append(buttons[i].id);
-}
 
 var playing = "off";
 function playSound(id) {
-    var x = document.getElementById(id);
+    var setsound = document.getElementById(id);
     if (playing === "on") {
-      x.pause();
-      x.currentTime = 0;
+      setsound.pause();
+      setsound.currentTime = 0;
       playing = "off";
     }
     else {
-      x.play();
+      setsound.play();
       playing = "on";
     }
 }
 
 function SetVolume(val){
-    var show = document.getElementById(idArray);
-        show.volume = val / 100;  
+  let idArray = [];
+  for(let i = 0; i < buttons.length; i++){
+    idArray.append(buttons[i].id);
+  }
+  var noise = document.getElementById(idArray);
+  noise.volume = val / 100;
 }
