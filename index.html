@@ -7,6 +7,8 @@
 		<script src="playsound.js"></script>
 </head>
 <body>
+	<div id="particles-js">
+	<div id="board">
 	<div class="shadow">
 		<h1>Soundboard</h1>
 		<div class="soundboard">
@@ -47,15 +49,14 @@
 			</ul>
 		</div>
 	</div>
-	<div class="volume">
-		<h1>Volume</h1>
-		<div class="slide">
-		<input type="range" min="0" max="100" step="1" class="slider" id="myRange" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">
-		<div class="slider-label">
-		<h4 class="low">0</h4>
-		<h4 class="high">100</h4>
 	</div>
-	</div>
-	</div>
+</div>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+	<script>
+		particlesJS.load('particles-js', 'particles.json', function(){
+			console.log('particles.json loaded...');
+		});
+	</script>
 </body>
 </html>

@@ -6,6 +6,7 @@ body, html {
 	align-items: center;
 	font-family: Poppins;
 	flex-direction: column;
+	color: blue;
 }
 li{
 	display: flex;
@@ -87,4 +88,17 @@ h1{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+#board{
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.99;
+	top: 3%;
+	left: 25%;
+}
+#particles-js{
+	height: 100%;
+	width: 100%;
 }
