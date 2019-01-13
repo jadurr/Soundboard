@@ -6,7 +6,6 @@ body, html {
 	align-items: center;
 	font-family: Poppins;
 	flex-direction: column;
-	color: blue;
 }
 li{
 	display: flex;

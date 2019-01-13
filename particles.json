@@ -1,16 +1,16 @@
 {
   "particles":{
     "number":{
-      "value":400
+      "value":200
     },
     "color":{
-      "value":"#000000"
+      "value":"#0000ff"
     },
     "shape":{
       "type":"circle",
       "stroke":{
         "width":1,
-        "color":"#000000"
+        "color":"#0000ff"
       },
       "image":{
         "src":"http://www.iconsdb.com/icons/preview/white/contacts-xxl.png"
@@ -35,7 +35,7 @@
     "line_linked":{
       "enable": true,
       "distance": 120,
-      "color":"#000000",
+      "color":"#0000ff",
       "width":1
     },
     "move":{
@@ -58,7 +58,7 @@
     },
     "modes":{
       "repulse":{
-        "distance":50,
+        "distance":25,
         "duration":0.4
       },
       "bubble":{
